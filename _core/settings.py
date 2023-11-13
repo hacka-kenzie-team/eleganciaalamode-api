@@ -47,12 +47,14 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     "rest_framework",
-    "drf_spectacular",
+    # "drf_spectacular",
 ]
 
 MY_APPS = [
     "users",
     "products",
+    "product_styles",
+    "keywords",
     "comments",
     "orders",
     "order_items",
