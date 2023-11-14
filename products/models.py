@@ -7,7 +7,7 @@ from django.db import models
 
 class Product(models.Model):
     name = models.CharField(max_length=127, unique=True)
-    slug = models.CharField(max_length=127, unique=True)
+    slug = models.SlugField(max_length=127, unique=True)
     price = models.FloatField()
     stock = models.IntegerField(default=0)
     category = models.CharField(max_length=30)

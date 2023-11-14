@@ -12,8 +12,8 @@ from rest_framework.views import Request, Response, status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from .serializers import UserSerializer
-from orders.serializers import OrderSerializer
 from .models import User
+from orders.serializers import OrderSerializer
 from orders.models import Order
 
 
