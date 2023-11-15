@@ -1,9 +1,15 @@
 from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
 from .models import User
+from comments.serializers import CommentSerializer
 
 
 class UserSerializer(serializers.ModelSerializer):
+    comments = CommentSerializer(
+        source='comment_set',
+        many=True,
+        read_only=True
+    )
 
     class Meta:
         model = User
@@ -40,12 +46,7 @@ class UserSerializer(serializers.ModelSerializer):
             "orders": {
                 "read_only": True,
                 "many": True
-            },
-            "comments": {
-                "read_only": True,
-                "many": True,
-                "source": "user_comments"
-            },
+            }
         }
 
     def create(self, validated_data: dict) -> User:

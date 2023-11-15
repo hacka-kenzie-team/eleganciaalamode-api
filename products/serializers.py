@@ -5,11 +5,17 @@ from keywords.models import Keyword
 from product_styles.models import Product_style
 from product_styles.serializers import ProductStyleSerializer
 from keywords.serializers import KeywordSerializer
+from comments.serializers import CommentSerializer
 
 
 class ProductSerializer(serializers.ModelSerializer):
     style = ProductStyleSerializer()
     keywords = KeywordSerializer(many=True)
+    comments = CommentSerializer(
+        source='comment_set',
+        many=True,
+        read_only=True
+    )
 
     class Meta:
         model = Product
