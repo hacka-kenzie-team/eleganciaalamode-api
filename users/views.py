@@ -61,8 +61,5 @@ class UserOrdersListView(ListAPIView):
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
 
-    serializer_class = [OrderSerializer]
+    serializer_class = OrderSerializer
     queryset = Order.objects.all()
-
-    def list(self, request, *args, **kwargs):
-        return Response(Order.objects.values(), status.HTTP_200_OK)

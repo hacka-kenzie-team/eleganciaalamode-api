@@ -23,6 +23,7 @@ class OrderSerializer(serializers.ModelSerializer):
             "date_paid": {"read_only": True},
             "user": {"required": False, "source": "user"}
         }
+        depth = 1
 
     def create(self, validated_data: dict):
         items_bought = validated_data.pop("items_bought")
