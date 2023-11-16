@@ -4,7 +4,7 @@ from rest_framework.generics import (
     RetrieveUpdateDestroyAPIView
 )
 from _core.permissions import IsSuperUserOrOwnsComment
-from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from .serializers import CommentSerializer
 from .models import Comment
@@ -14,8 +14,6 @@ from django.shortcuts import get_object_or_404
 
 
 class CommentListView(ListAPIView):
-    authentication_classes = [JWTAuthentication]
-    permission_classes = [IsAuthenticated, IsAdminUser]
 
     serializer_class = CommentSerializer
     queryset = Comment.objects.all()
