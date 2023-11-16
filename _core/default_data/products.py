@@ -1,6 +1,5 @@
 default_products = [
     {
-        "id": 1,
         "name": "white shirt",
         "slug": "whiteshirt",
         "price": 9999.99,
@@ -21,7 +20,6 @@ default_products = [
         },
     },
     {
-        "id": 2,
         "name": "black pants",
         "slug": "blackpants",
         "price": 9999.99,
@@ -42,7 +40,6 @@ default_products = [
         },
     },
     {
-        "id": 3,
         "name": "winter dress",
         "slug": "winterdress",
         "price": 9999.99,
@@ -63,7 +60,6 @@ default_products = [
         },
     },
     {
-        "id": 4,
         "name": "leather boots",
         "slug": "leatherboots",
         "price": 9999.99,
@@ -84,7 +80,6 @@ default_products = [
         },
     },
     {
-        "id": 5,
         "name": "blue coat",
         "slug": "bluecoat",
         "price": 9999.99,
@@ -105,7 +100,6 @@ default_products = [
         },
     },
     {
-        "id": 6,
         "name": "super skirt",
         "slug": "superskirt",
         "price": 9999.99,
@@ -126,7 +120,6 @@ default_products = [
         },
     },
     {
-        "id": 7,
         "name": "black suit",
         "slug": "blacksuit",
         "price": 9999.99,
