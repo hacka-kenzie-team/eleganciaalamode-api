@@ -10,6 +10,7 @@ class Product(models.Model):
     slug = models.SlugField(max_length=127, unique=True)
     price = models.FloatField()
     stock = models.IntegerField(default=0)
+    description = models.TextField()
     category = models.CharField(max_length=30)
     visit_number = models.IntegerField(default=0)
     collection = models.CharField(max_length=100)
