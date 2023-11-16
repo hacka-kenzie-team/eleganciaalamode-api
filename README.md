@@ -607,7 +607,7 @@ response:
 ```
 </details>
 
-PATCH https://eleganciaalamode-api.onrender.com/api/comments/<COMMENT_ID>
+PATCH https://eleganciaalamode-api.onrender.com/api/comments/<COMMENT_ID>/
 
 Header: AUTHORIZATION BEARER TOKEN
 
