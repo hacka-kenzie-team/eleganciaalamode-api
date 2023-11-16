@@ -583,6 +583,7 @@ POST https://eleganciaalamode-api.onrender.com/api/comments/<COMMENT_ID>/
 Header: AUTHORIZATION BEARER TOKEN
 
 Body:
+<details>
 
 ```
 {
@@ -590,6 +591,7 @@ Body:
 	"rating": 10
 }
 ```
+</details>
 
 response:
 <details>
@@ -610,7 +612,8 @@ PATCH https://eleganciaalamode-api.onrender.com/api/comments/<COMMENT_ID>
 Header: AUTHORIZATION BEARER TOKEN
 
 Body:
-
+<details>
+	
 ```
 {
 	"rating": 4,
@@ -618,6 +621,7 @@ Body:
 	"content": " all changed"
 }
 ```
+</details>
 
 response:
 <details>
