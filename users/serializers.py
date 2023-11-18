@@ -2,6 +2,7 @@ from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
 from .models import User
 from comments.serializers import CommentSerializer
+from orders.serializers import OrderSerializer
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -10,6 +11,7 @@ class UserSerializer(serializers.ModelSerializer):
         many=True,
         read_only=True
     )
+    orders = OrderSerializer(many=True, read_only=True)
 
     class Meta:
         model = User
@@ -43,10 +45,6 @@ class UserSerializer(serializers.ModelSerializer):
                 ],
             },
             "is_superuser": {"default": False},
-            "orders": {
-                "read_only": True,
-                "many": True
-            }
         }
 
     def create(self, validated_data: dict) -> User:
