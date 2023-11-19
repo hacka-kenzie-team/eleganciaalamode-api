@@ -104,3 +104,9 @@ class ProductSerializer(serializers.ModelSerializer):
         instance.save()
 
         return instance
+
+
+class ProductStockSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = ["stock"]
