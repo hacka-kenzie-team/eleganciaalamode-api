@@ -52,7 +52,7 @@ class ProductListCreateView(ListCreateAPIView):
         if spotlight is not None:
             filter_conditions &= Q(spotlight=spotlight)
 
-        products = Product.objects.filter(filter_conditions)
+        products = Product.objects.filter(filter_conditions).distinct("name")
 
         serializer = self.get_serializer(products, many=True)
         return Response(serializer.data)
