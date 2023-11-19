@@ -1,12 +1,14 @@
 from rest_framework.generics import (
     ListCreateAPIView,
-    RetrieveUpdateDestroyAPIView
+    RetrieveUpdateDestroyAPIView,
+    UpdateAPIView
 )
 from rest_framework.views import Request, Response, status
 from rest_framework_simplejwt.authentication import JWTAuthentication
+from rest_framework.permissions import IsAuthenticated
 from _core.permissions import IsSuperUserOrSafeMethod
 from .models import Product
-from .serializers import ProductSerializer
+from .serializers import ProductSerializer, ProductStockSerializer
 from django.db.models import Q
 
 
@@ -72,5 +74,14 @@ class ProductRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     permission_classes = [IsSuperUserOrSafeMethod]
 
     serializer_class = ProductSerializer
+    queryset = Product.objects.all()
+    lookup_url_kwarg = "product_id"
+
+
+class ProductUpdateStockView(UpdateAPIView):
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    serializer_class = ProductStockSerializer
     queryset = Product.objects.all()
     lookup_url_kwarg = "product_id"
