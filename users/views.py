@@ -8,7 +8,7 @@ from _core.permissions import (
     IsSuperUserOrNotSafeMethod,
     IsSuperUserOrOwnsAccount
 )
-from rest_framework.views import Request, Response, status
+from rest_framework.views import APIView, Request, Response, status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from .serializers import UserSerializer
@@ -63,3 +63,12 @@ class UserOrdersListView(ListAPIView):
 
     serializer_class = OrderSerializer
     queryset = Order.objects.all()
+
+
+class CheckEmailView(APIView):
+    def get(self, request: Request, user_email) -> Response:
+        user_exists = User.objects.filter(email=user_email).exists()
+        response = {
+            "email_exists": user_exists
+        }
+        return Response(response, status.HTTP_200_OK)

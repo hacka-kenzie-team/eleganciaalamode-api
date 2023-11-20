@@ -4,7 +4,8 @@ from .views import (
     UserListCreateView,
     UserRetrieveUpdateDestroyView,
     UserOrdersCreateView,
-    UserOrdersListView
+    UserOrdersListView,
+    CheckEmailView
 )
 
 
@@ -13,5 +14,6 @@ urlpatterns = [
     path("users/<int:user_id>/", UserRetrieveUpdateDestroyView.as_view()),
     path("user/buy/", UserOrdersCreateView.as_view()),
     path("orders/", UserOrdersListView.as_view()),
-    path("login/", views.TokenObtainPairView.as_view())
+    path("login/", views.TokenObtainPairView.as_view()),
+    path("check/<str:user_email>/", CheckEmailView.as_view())
 ]
