@@ -1,62 +1,62 @@
 default_comments = [
     {
-        "content": "Great product, love the quality!",
+        "content": "Adorei a cor e o design do 'Visão Protegida em Tons de Azul'. Muito estiloso!",
         "rating": 8,
-        "product_name": "white shirt",
+        "product_name": "Visão Protegida em Tons de Azul",
         "user_name": "Test"
     },
     {
-        "content": "Awesome skirt, fits perfectly!",
+        "content": "A 'Elegância Aveludada' é realmente elegante e confortável. Recomendo!",
         "rating": 8,
-        "product_name": "super skirt",
+        "product_name": "Elegância Aveludada",
         "user_name": "Kenzie"
     },
     {
-        "content": "Impressive black suit, very stylish!",
+        "content": "O 'Elegância Atemporal: Terno Preto' é um clássico. Todo homem deveria ter um.",
         "rating": 8,
-        "product_name": "black suit",
+        "product_name": "Elegância Atemporal: Terno Preto",
         "user_name": "Monica"
     },
     {
-        "content": "Fantastic leather boots, super comfortable!",
+        "content": "O 'Couro Clássico Masculino' é de alta qualidade e muito durável. Vale cada centavo.",
         "rating": 8,
-        "product_name": "leather boots",
+        "product_name": "Couro Clássico Masculino",
         "user_name": "Monica"
     },
     {
-        "content": "Lovely winter dress, perfect for the season!",
+        "content": "A 'Estilo Boêmio com Camisa Crochê' é perfeita para um look casual de verão.",
         "rating": 8,
-        "product_name": "winter dress",
+        "product_name": "Estilo Boêmio com Camisa Crochê",
         "user_name": "Monica"
     },
     {
-        "content": "Comfortable black pants, great for everyday wear!",
+        "content": "O 'Couro Nobre para Outono e Inverno' é aconchegante e elegante. Perfeito para as estações mais frias.",
         "rating": 8,
-        "product_name": "black pants",
+        "product_name": "Couro Nobre para Outono e Inverno",
         "user_name": "Monica"
     },
     {
-        "content": "Nice white shirt, fits well!",
+        "content": "O 'Conforto Casual em Azul Claro' é muito confortável e a cor é linda!",
         "rating": 8,
-        "product_name": "white shirt",
+        "product_name": "Conforto Casual em Azul Claro",
         "user_name": "Mauricio"
     },
     {
-        "content": "Superb white shirt, excellent quality!",
+        "content": "A 'Elegância Lilás para Primavera e Verão' é leve e a cor é muito vibrante. Adorei!",
         "rating": 8,
-        "product_name": "white shirt",
+        "product_name": "Elegância Lilás para Primavera e Verão",
         "user_name": "Monica"
     },
     {
-        "content": "Stylish black suit, very satisfied with the purchase!",
+        "content": "O 'Companheiro de Pulso Executivo' é um relógio muito elegante. Ótimo para ocasiões formais.",
         "rating": 8,
-        "product_name": "black suit",
+        "product_name": "Companheiro de Pulso Executivo",
         "user_name": "Fernanda"
     },
     {
-        "content": "Beautiful blue coat, keeps me warm in winter!",
+        "content": "O 'Chapeu Chic de Inverno' é muito estiloso e quente. Perfeito para o inverno.",
         "rating": 8,
-        "product_name": "blue coat",
+        "product_name": "Chapeu Chic de Inverno",
         "user_name": "Luana"
     },
 ]
